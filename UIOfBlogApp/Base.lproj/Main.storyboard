@@ -130,20 +130,20 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="85.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaS-eu-ApJ">
-                                            <rect key="frame" x="8" y="8" width="339.5" height="77.5"/>
-                                            <color key="backgroundColor" red="0.8502818378" green="0.89574198400000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <state key="normal" title="Button"/>
-                                            <connections>
-                                                <segue destination="HS8-c3-dhb" kind="show" id="TA6-Xt-oix"/>
-                                            </connections>
-                                        </button>
                                         <button opaque="NO" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ess-7w-Zt7">
                                             <rect key="frame" x="355.5" y="8" width="236.5" height="77.5"/>
                                             <color key="backgroundColor" red="0.8502818378" green="0.89574198400000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <state key="normal" title="Button"/>
                                             <connections>
                                                 <segue destination="HS8-c3-dhb" kind="show" id="DYr-cg-Xba"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaS-eu-ApJ">
+                                            <rect key="frame" x="8" y="8" width="339.5" height="77.5"/>
+                                            <color key="backgroundColor" red="0.8502818378" green="0.89574198400000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <segue destination="HS8-c3-dhb" kind="show" id="TA6-Xt-oix"/>
                                             </connections>
                                         </button>
                                     </subviews>

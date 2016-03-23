@@ -85,11 +85,19 @@ NSInteger l = 3;
    
     
     
+ //bOne.contentEdgeInsets=UIEdgeInsetsMake(170, 0, 20, 0);
+   [bOne setTitleEdgeInsets:UIEdgeInsetsMake(150, 0, 20, 0)];
+  [bOne setTitle:@"helloWorld" forState:0];
+   
     //--------------CellCreatingAndRepeat start------------
+    
+    
+    
     
             if ((indexPath.row == 0) || (indexPath.row == 4) || (indexPath.row == 8)) {
                 cell = [tableView dequeueReusableCellWithIdentifier:@"tableCellOne" forIndexPath:indexPath];
-                
+               
+                //[bOne backgroundImageForState:[_imgArray indexOfObject:indexPath]];
                 //i=indexPath.row+4;
                 
             }else if ((indexPath.row == 1) || (indexPath.row == 5) ||(indexPath.row == 9)){
@@ -109,23 +117,25 @@ NSInteger l = 3;
     
     
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    
   
     
     //cell.imageView.image =[UIImage imageNamed:[NSString stringWithFormat:@"%@",[_imgArray objectAtIndex:indexPath.row]]];
     
-   
-    if (indexPath.row == 0) {
-        [bOne setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@",[_imgArray objectAtIndex:indexPath.row]]] forState:UIControlStateNormal];
-         NSLog(@"%ld",(long)indexPath.row);
-    }else if (indexPath.row == 4){
-        [bOne setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@",[_imgArray objectAtIndex:indexPath.row]]] forState:UIControlStateNormal];
-    }else if(indexPath.row == 8){
-        [bOne setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@",[_imgArray objectAtIndex:indexPath.row]]] forState:UIControlStateNormal];
-    }
-    
-    
-    
+//    NSLog(@"%ld",(long)indexPath.row);
+//    if (indexPath.row == 0) {
+//        //[bOne setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@",[_imgArray objectAtIndex:indexPath.row]]] forState:UIControlStateNormal];
+//        bOne=[[UIButton alloc]init];
+//        [[bOne imageView] setContentMode: UIViewContentModeScaleAspectFit];
+//        [bOne setImage:[_imgArray objectAtIndex:0] forState:UIControlStateNormal];
+//         NSLog(@"%ld",(long)indexPath.row);
+//    }else if (indexPath.row == 4){
+//        [bOne setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@",[_imgArray objectAtIndex:indexPath.row]]] forState:UIControlStateNormal];
+//    }else if(indexPath.row == 8){
+//        [bOne setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@",[_imgArray objectAtIndex:indexPath.row]]] forState:UIControlStateNormal];
+//    }
+//    
+//    
+//    
     
     
     
@@ -153,7 +163,7 @@ NSInteger l = 3;
     
     
     
-        
+    
     
 //    NSLog(@"%ld",(long)indexPath.row);
 //    // Configure the cell...
